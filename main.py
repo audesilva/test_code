@@ -27,3 +27,6 @@ def main():
   location = sys.argv[0]
   url, weights_path, use_timex = load_model_details(location)
   print(url)
+
+if __name__ == "__main__":
+    main()
