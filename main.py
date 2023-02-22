@@ -10,7 +10,6 @@ import torch
 import torchvision.transforms as T
 import torchvision
 import numpy as np 
-import cupy as cp
 import cv2
 import warnings
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
