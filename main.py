@@ -1,19 +1,22 @@
 # import necessary libraries
 import glob
 import os
-import sys
 import random
 import matplotlib.pyplot as plt 
 from PIL import Image
 from tqdm import tqdm
 
+import logging
+
+import sys
 import torch
 import torchvision.transforms as T
 import torchvision
 import numpy as np 
+import cupy as cp
 import cv2
 import warnings
-from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
+from torchvision.models.detection.faster_rcnn import FastRCNNPredictoredictor
 
 def load_model_details(location):
   if location == 'currituck_hampton_inn':
