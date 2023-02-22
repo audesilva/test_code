@@ -1,5 +1,4 @@
 # import necessary libraries
-%matplotlib inline
 import glob
 import os
 import random
