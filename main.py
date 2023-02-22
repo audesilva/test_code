@@ -183,7 +183,8 @@ def predict_on_stream(url, model, device, categories, use_timex):
 def main():
   location = sys.argv[1]
   url, weights_path, use_timex = load_model_details(location)
-
+  model, device, categories = load_model(weights_path)
+  predict_on_stream(url, model, device, categories, use_timex)
   
   
 if __name__ == "__main__":
