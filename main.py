@@ -25,9 +25,10 @@ def load_model_details(location):
   return url, weights_path, use_timex
   
 def main():
-  location = sys.argv[0]
+  location = sys.argv[1]
   url, weights_path, use_timex = load_model_details(location)
-  print(url)
 
+  
+  
 if __name__ == "__main__":
     main()
