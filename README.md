@@ -1,3 +1,6 @@
+# Rip Current Detector Beta Testing Code
+
+
 ## 1. Download weights of the model
 
 mkdir models
