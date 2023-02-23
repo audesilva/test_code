@@ -16,7 +16,7 @@ import numpy as np
 import cupy as cp
 import cv2
 import warnings
-from torchvision.models.detection.faster_rcnn import FastRCNNPredictoredictor
+from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 
 from google.colab.patches import cv2_imshow
 warnings.filterwarnings('ignore')
