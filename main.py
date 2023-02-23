@@ -108,6 +108,17 @@ def load_model(weights_path):
   # model.load_state_dict(torch.load('./models/fasterrcnn_resnet50_fpn.pt'))
   model.load_state_dict(torch.load(weights_path))
   
+ 
+  model.to(device)
+
+  # set to evaluation mode
+  model.eval()
+  
+  # load the RIP dataset category names
+  RIP_INSTANCE_CATEGORY_NAMES = ['__background__', 'rip']
+
+  return model, device, RIP_INSTANCE_CATEGORY_NAMES
+  
 def draw_prediction(img, boxes, pred_cls, rect_th=2, text_size=2, text_th=2):
   for i in range(len(boxes)):
     pt1 = (int(boxes[i][0][0]), int(boxes[i][0][1]))
