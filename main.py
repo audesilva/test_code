@@ -21,6 +21,11 @@ from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 from google.colab.patches import cv2_imshow
 warnings.filterwarnings('ignore')
 
+def make_timex(imgs):
+  timex = cp.mean(cp.asarray(imgs), axis=0)
+  timex = cp.asnumpy(timex)
+  return timex
+
 def load_model_details(location):
   if location == 'currituck_hampton_inn':
     url = "https://stage-ams.srv.axds.co/stream/adaptive/noaa/currituck_hampton_inn/hls.m3u8"
