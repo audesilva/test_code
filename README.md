@@ -13,4 +13,4 @@ pip install -r ./test_code/requirements.txt
 
 ## 4. Predict on the video stream
 
-python /content/test_code/main.py 'currituck_hampton_inn'
+python ./test_code/main.py 'currituck_hampton_inn'
