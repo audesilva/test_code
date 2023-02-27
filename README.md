@@ -1,3 +1,12 @@
+# Disclaimer:
+Rip current detection is an experimental product and should not be used for decisions regarding public safety. It is presently being evaluated at different locations and under different oceanographic and environmental conditions. There are known limitations with the existing model, such as not recognizing all types of rip currents or not detecting rip currents with unclear visual indicators. The model should presently only be used for research purposes.
+
+a.  https://www.sciencedirect.com/science/article/abs/pii/S0378383921000193
+    
+b.  general info about rips e.g.
+     https://www.sciencedirect.com/science/article/pii/S0012825216303117
+
+
 # Rip Current Detector Beta Testing Code
 
 
