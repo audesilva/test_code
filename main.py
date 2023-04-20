@@ -31,9 +31,10 @@ def load_model_details(location):
     url = "https://stage-ams.srv.axds.co/stream/adaptive/noaa/currituck_hampton_inn/hls.m3u8"
     weights_path = "./models/fasterrcnn_resnet50_fpn.pt"
     use_timex = True
+    filter_by_time = False
   else:
     raise Exception("rip detector is only optimized for these locations.\n 1. currituck_hampton_inn")
-  return url, weights_path, use_timex
+  return url, weights_path, use_timex, filter_by_time
 
 def get_prediction(img_path, model, device, RIP_INSTANCE_CATEGORY_NAMES, confidence):
   """
