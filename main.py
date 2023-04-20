@@ -33,6 +33,11 @@ def load_model_details(location):
     use_timex = True
     time_window = 300
     filter_by_time = False
+  elif location == 'miholland_ottawa':
+    url = None
+    weights_path = None
+    use_timex = True
+    time_window = 0
   else:
     raise Exception("rip detector is only optimized for these locations.\n 1. currituck_hampton_inn")
   return url, weights_path, use_timex, time_window, filter_by_time
